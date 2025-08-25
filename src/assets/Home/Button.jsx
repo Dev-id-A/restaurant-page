@@ -1,7 +1,7 @@
-function Button({src}) {
+function Button({src, alt, onClick}) {
   return (
     <button className="size-10 cursor-pointer">
-      <img src={src} alt="Uk icon" />
+      <img src={src} alt={alt} onClick={onClick} />
     </button>
   )
 }
