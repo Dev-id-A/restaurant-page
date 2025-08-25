@@ -9,16 +9,22 @@ function App() {
   const [lang, setLang] = useState("es");
   const [fadeLang, setFadeLang] = useState(false);
 
-  const toggleFade = () => {
-
+  const toggleFade = (langParam) => {
+    if(langParam !== lang){
+    setLang(langParam)
+    setFadeLang(true)
+    setTimeout(()=> 
+      setFadeLang(false)
+    ,500)
+  }
   };
 
   return (
     <>
     <Routes>
-      <Route path="/" element={<Layout {...{}} />}>
+      <Route path="/" element={<Layout {...{fadeLang}} />}>
 
-        <Route index element={<Home {...{lang, setLang}} />} />
+        <Route index element={<Home {...{lang, toggleFade}} />} />
         <Route path="faq" element={<FAQ/>} />
         <Route path="menu" element={<Menu />} />
 
