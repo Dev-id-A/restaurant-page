@@ -3,17 +3,26 @@ import Home from "../pages/Home"
 import FAQ from "../pages/FAQ"
 import Menu from "../pages/Menu"
 import { useEffect, useState } from "react"
+import Layout from "../pages/Layout"
 
 function App() {
   const [lang, setLang] = useState("es");
+  const [fadeLang, setFadeLang] = useState(false);
+
+  const toggleFade = () => {
+
+  };
 
   return (
     <>
     <Routes>
+      <Route path="/" element={<Layout {...{}} />}>
 
-      <Route path="/" element={<Home {...{lang, setLang}} />} />
-      <Route path="faq" element={<FAQ/>} />
-      <Route path="menu" element={<Menu />} />
+        <Route index element={<Home {...{lang, setLang}} />} />
+        <Route path="faq" element={<FAQ/>} />
+        <Route path="menu" element={<Menu />} />
+
+      </Route>
     </Routes>
     </>
   )
