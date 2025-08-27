@@ -10,7 +10,7 @@ const message = {
         <div className="flex flex-1 bg-black justify-center items-center px-50">
             <h1 className="font-yrsa text-center text-white text-3xl">{lang == "es" ? message.es:message.en}</h1>
         </div>
-        <img className="h-auto max-h-full w-fit object-contain" src="public/img/vacas pastando 2.jpg" alt="Cows" />
+        <img className="h-auto max-h-full w-fit object-contain" src="public/img/home/vacas pastando 2.jpg" alt="Cows" />
     </section>
   )
 }
