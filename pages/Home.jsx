@@ -1,4 +1,4 @@
-import Navbar from "../src/assets/Navbar/Navbar"
+import MainPage from "../src/assets/Home/MainPage"
 import Presentation from "../src/assets/Home/Presentation"
 import OurMeats from "../src/assets/Home/OurMeats"
 import Button from "../src/assets/Home/Button"
@@ -6,15 +6,14 @@ import Foods from "../src/assets/Home/Foods"
 
 function Home({lang, toggleFade}) {
   return (
-<main className="h-screen bg-center bg-cover bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/img/home/chuleton-brasa.jpg')]">
-      <Navbar {...{toggleFade}} />
+<main className="bg-[rgba(0,0,0,0.93)]">
 
       <div className="flex flex-col items-center justify-center">
-        <img className="" src="/svg/the-grand.svg" alt="The grand logo" />
+        <MainPage {...{toggleFade}} />
         <Presentation {...{lang}} />
         <OurMeats {...{lang}} />
 
-        <section className="flex flex-col items-center justify-center gap-20 w-[90%] text-center border bg-[rgba(46,27,0,0.83)]">
+        <section className="flex flex-col items-center justify-center gap-20 w-[90%] text-center border bg-[rgba(58,34,0,0.69)]">
           <h2 className="text-4xl text-royal font-yrsa mt-10">{lang == "es" ? 
             `Cada plato es una obra de arte. Explora nuestra carta y asegura tu mesa.`:
             "Each dish is a masterpiece. Explore our menu and reserve your table."}
