@@ -9,7 +9,7 @@ const presentation = {
 
 
   return (
-    <main className="font-yrsa text-center text-[rgba(164,126,0,1)] mt-25 pb-20">
+    <main className="font-yrsa text-center text-royal mt-25 pb-20">
       <h1 className="text-5xl">{lang == "es" ? presentation.aboutES:presentation.aboutEN}</h1>
         <p className="text-3xl mt-10 px-75">{lang == "es" ? presentation.descriptionES:presentation.descriptionEN}</p>
     </main>

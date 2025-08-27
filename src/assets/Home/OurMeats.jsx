@@ -6,7 +6,7 @@ const message = {
 
 
   return (
-    <section className="flex flex-row h-90 w-full px-10 mb-20">
+    <section className="flex flex-row h-140 w-full px-3 mb-20">
         <div className="flex flex-1 bg-black justify-center items-center px-50">
             <h1 className="font-yrsa text-center text-white text-3xl">{lang == "es" ? message.es:message.en}</h1>
         </div>

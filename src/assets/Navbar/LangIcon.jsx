@@ -1,4 +1,4 @@
-function Button({src, alt, onClick}) {
+function LangIcon({src, alt, onClick}) {
   return (
     <button className="size-10 cursor-pointer">
       <img src={src} alt={alt} onClick={onClick} />
@@ -6,4 +6,4 @@ function Button({src, alt, onClick}) {
   )
 }
 
-export default Button
+export default LangIcon
