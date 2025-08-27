@@ -46,7 +46,7 @@ const carouselImg = [
 ]
 
   return (
-    <div className="w-full px-10">
+    <div className="w-full">
         <Swiper
         modules={[Autoplay]}
         slidesPerView={4}
@@ -62,7 +62,7 @@ const carouselImg = [
               <img 
               src={slide.src}
               alt={slide.alt}
-              className="w-full h-128 object-cover"/>
+              className="w-full h-100 object-cover"/>
             </SwiperSlide>
           ))}
         </Swiper>
