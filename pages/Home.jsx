@@ -13,19 +13,20 @@ function Home({lang, toggleFade}) {
         <Presentation {...{lang}} />
         <OurMeats {...{lang}} />
 
-        <section className="flex flex-col items-center justify-center py-10 gap-10 w-full text-center">
+        <section className="flex flex-col items-center justify-center py-30 gap-10 w-full text-center">
           <h2 className="text-4xl text-royal font-yrsa">{lang == "es" ? 
             `Cada plato es una obra de arte. ¡Explora nuestra carta y asegura tu mesa!`:
             "Each dish is a masterpiece. Explore our menu and reserve your table."}
           </h2>
 
-            <div className="flex flex-row gap-30 mt-15 text-royal font-yrsa">
+            <div className="flex flex-row px-10 gap-5 justify-center w-full text-white font-yrsa">
               <Button children={lang == "es" ? "Menú":"Menu"} to={"menu"} />
               <Button children={lang=="es" ? "Reservar mesa":"Book a table"} to={"menu"} />
             </div>
-
-            <Foods></Foods>
         </section>
+        
+            <Foods></Foods>
+        
       </div>
     </main>
   )
