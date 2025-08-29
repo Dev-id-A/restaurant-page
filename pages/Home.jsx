@@ -3,6 +3,7 @@ import Presentation from "../src/assets/Home/Presentation"
 import OurMeats from "../src/assets/Home/OurMeats"
 import Button from "../src/assets/Home/Button"
 import Foods from "../src/assets/Home/Foods"
+import Reviews from "../src/assets/Home/Reviews"
 
 function Home({lang, toggleFade}) {
   return (
@@ -26,6 +27,8 @@ function Home({lang, toggleFade}) {
         </section>
         
             <Foods></Foods>
+
+            <Reviews></Reviews>
         
       </div>
     </main>
