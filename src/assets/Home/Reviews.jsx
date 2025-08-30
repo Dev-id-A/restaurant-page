@@ -1,25 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import ReviewsJson from "../Json/ReviewsJson";
+
 
 function Reviews() {
-const reviews = [{
-  review: "Lorem",
-  author: "ipsum"
-},{
-  review: "sit",
-  author: "Yo también"
-},{
-  review: "Dolorum minima",
-  author: "consectetur adipisicing"
-},{
-  review: "quidem harum quisquam",
-  author: "Vel oditn"
-},{
-  review: "Quo, aut.",
-  author: "Vel oditn"
-}]
-
   return (
     <div className="flex justify-center text-white w-full mt-20 h-30">
         <Swiper
@@ -32,9 +17,9 @@ const reviews = [{
         autoplay={{delay: 5000, disableOnInteraction:false}}
         className="flex w-full h-full"
         >
-          {reviews.map((review, index)=>(
+          {ReviewsJson.map((review, index)=>(
             <SwiperSlide key={index}>
-              <div className="flex flex-col items-center justify-center border-3 rounded-xl h-full">
+              <div className="flex flex-col text-center justify-center border-3 rounded-xl h-full">
                 <h1>{review.review}</h1>
                 <h2>{review.author}</h2>
               </div>

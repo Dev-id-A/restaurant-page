@@ -21,8 +21,8 @@ function Home({lang, toggleFade}) {
           </h2>
 
             <div className="flex flex-row px-10 gap-5 justify-center w-full text-white font-yrsa">
-              <Button children={lang == "es" ? "Menú":"Menu"} to={"menu"} />
-              <Button children={lang=="es" ? "Reservar mesa":"Book a table"} to={"menu"} />
+              <Button children={lang == "es" ? "Menú":"Menu"} to={"menu"} src={"bg-[url('/img/home/menu.jpg')]"} />
+              <Button children={lang=="es" ? "Reservar mesa":"Book a table"} to={"menu"} src={"bg-[url('/img/home/table.jpg')]"} />
             </div>
         </section>
         
