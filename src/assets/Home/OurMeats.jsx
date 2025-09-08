@@ -1,14 +1,11 @@
-function OurMeats({lang}) {
-const message = {
-  es: "Nuestras carnes provienen de ganaderías responsables, donde los animales crecen en libertad y sin hormonas ni químicos. Apostamos por una producción ética y sostenible que realza el sabor auténtico de cada corte.",
-  en: "Our meats come from responsible farms, where animals are raised free-range and without hormones or chemicals. We are committed to ethical, sustainable practices that bring out the true flavor of every cut."
-};
+import homeLang from "../Json/HomeJson"
 
+function OurMeats({lang}) {
 
   return (
     <section className="flex flex-row h-140 w-full px-3">
         <div className="flex flex-1 bg-black justify-center items-center px-50">
-            <h1 className="font-yrsa text-center text-white text-3xl">{lang == "es" ? message.es:message.en}</h1>
+            <h1 className="font-yrsa text-center text-white text-3xl">{homeLang.message[lang]}</h1>
         </div>
         <img className="h-auto max-h-full w-fit object-contain" src="/img/home/vacas pastando 2.jpg" alt="Cows" />
     </section>

@@ -4,6 +4,7 @@ import OurMeats from "../src/assets/Home/OurMeats"
 import Button from "../src/assets/Home/Button"
 import Foods from "../src/assets/Home/Foods"
 import Reviews from "../src/assets/Home/Reviews"
+import homeLang from "../src/assets/Json/HomeJson"
 
 function Home({lang, toggleFade}) {
   return (
@@ -15,14 +16,12 @@ function Home({lang, toggleFade}) {
         <OurMeats {...{lang}} />
 
         <section className="flex flex-col items-center justify-center py-30 gap-10 w-full text-center">
-          <h2 className="text-4xl text-royal font-yrsa">{lang == "es" ? 
-            `Cada plato es una obra de arte. ¡Explora nuestra carta y asegura tu mesa!`:
-            "Each dish is a masterpiece. Explore our menu and reserve your table."}
+          <h2 className="text-4xl text-royal font-yrsa">{homeLang.slogan[lang]}
           </h2>
 
             <div className="flex flex-row px-10 gap-5 justify-center w-full text-white font-yrsa">
-              <Button children={lang == "es" ? "Menú":"Menu"} to={"menu"} src={"bg-[url('/img/home/menu.jpg')]"} />
-              <Button children={lang=="es" ? "Reservar mesa":"Book a table"} to={"menu"} src={"bg-[url('/img/home/table.jpg')]"} />
+              <Button children={homeLang.menu[lang]} to={"menu"} src={"bg-[url('/img/home/menu.jpg')]"} />
+              <Button children={homeLang.book[lang]} to={"menu"} src={"bg-[url('/img/home/table.jpg')]"} />
             </div>
         </section>
         
