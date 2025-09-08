@@ -25,8 +25,8 @@ function App() {
       <Route path="/" element={<Layout {...{fadeLang}} />}>
 
         <Route index element={<Home {...{lang, toggleFade}} />} />
-        <Route path="faq" element={<FAQ/>} />
-        <Route path="menu" element={<Menu />} />
+        <Route path="faq" element={<FAQ/>} {...{lang, toggleFade}} />
+        <Route path="menu" element={<Menu {...{lang, toggleFade}} />} />
 
       </Route>
     </Routes>
