@@ -5,6 +5,7 @@ import menuJson from "../src/assets/Json/MenuJson";
 function Menu({lang}) {
   return (
     <main className="w-screen h-screen overflow-hidden bg-gradient-to-r from-[rgba(9,9,9,1)] via-[rgba(30,18,0,1)] to-[rgba(9,9,9,1)]">
+
       <div className="relative w-full h-30 flex flex-row justify-center items-center">
 
         <Link to={"/"} className="absolute grid place-items-center left-20 h-10 w-30 text-white">
@@ -21,7 +22,9 @@ function Menu({lang}) {
       <div className="py-10 h-[90vh]">
         <MenuSection {...{lang}}/>
       </div>
+
     </main>
+
   )
 }
 

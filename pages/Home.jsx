@@ -9,10 +9,13 @@ import homeLang from "../src/assets/Json/HomeJson"
 function Home({lang, toggleFade}) {
   return (
 <main className="pb-20 bg-gradient-to-r from-[rgba(9,9,9,1)] via-[rgba(30,18,0,1)] to-[rgba(9,9,9,1)]">
+  
 
       <div className="flex flex-col items-center justify-center">
         <MainPage {...{toggleFade}} />
+
         <Presentation {...{lang}} />
+
         <OurMeats {...{lang}} />
 
         <section className="flex flex-col items-center justify-center py-30 gap-10 w-full text-center">
@@ -28,6 +31,7 @@ function Home({lang, toggleFade}) {
             <Foods></Foods>
 
             <Reviews></Reviews>
+
         
       </div>
     </main>
