@@ -22,7 +22,7 @@ function Home({lang, toggleFade}) {
           <h2 className="text-4xl text-royal font-yrsa">{homeLang.slogan[lang]}
           </h2>
 
-            <div className="flex flex-row px-10 gap-5 justify-center w-full text-white font-yrsa">
+            <div className="flex flex-row px-10 gap-5 justify-center w-full text-royal font-yrsa">
               <Button children={homeLang.menu[lang]} to={"menu"} src={"bg-[url('/img/home/menu.jpg')]"} />
               <Button children={homeLang.book[lang]} to={"menu"} src={"bg-[url('/img/home/table.jpg')]"} />
             </div>

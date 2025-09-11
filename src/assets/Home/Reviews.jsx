@@ -6,7 +6,7 @@ import ReviewsJson from "../Json/ReviewsJson";
 
 function Reviews() {
   return (
-    <div className="flex justify-center text-white w-full mt-20 h-30">
+    <div className="flex justify-center text-royal w-full mt-20 h-30">
         <Swiper
         modules={[Autoplay]}
         loop

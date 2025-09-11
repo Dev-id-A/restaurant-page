@@ -3,7 +3,7 @@ import homeLang from "../Json/HomeJson"
 function Presentation({lang}) {
 
   return (
-    <main className="h-screen w-screen flex flex-col justify-center items-center py-5 font-yrsa text-center text-royal">
+    <main className="h-screen w-auto flex flex-col justify-center items-center py-5 font-yrsa text-center text-royal">
 
       <img src="/img/home/separador.png" alt="separator" className="h-auto w-[60vh] rotate-x-180"/>
       
