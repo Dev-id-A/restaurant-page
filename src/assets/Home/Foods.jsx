@@ -44,7 +44,7 @@ const carouselImg = [
 ]
 
   return (
-    <div className="w-full">
+    <div className="w-full px-3">
         <Swiper
         modules={[Autoplay]}
         slidesPerView={4}

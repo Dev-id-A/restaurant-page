@@ -30,7 +30,15 @@ function Home({lang, toggleFade}) {
         
             <Foods></Foods>
 
-            <Reviews></Reviews>
+        <section className="flex flex-row w-full h-150 gap-30 px-5">
+          <div className="flex items-center text-royal w-1/2 text-center text-3xl leading-relaxed">
+            <h2>{homeLang.reviewTitle[lang]}</h2>
+          </div>
+          
+          <div className=" flex items-center w-1/2">
+            <Reviews {...{lang}}/>
+          </div>
+        </section>
 
         
       </div>

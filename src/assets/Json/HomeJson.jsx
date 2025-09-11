@@ -22,7 +22,12 @@ const homeLang = {
     message: {
         es: "Nuestras carnes provienen de ganaderías responsables, donde los animales crecen en libertad y sin hormonas ni químicos. Apostamos por una producción ética y sostenible que realza el sabor auténtico de cada corte.",
         en: "Our meats come from responsible farms, where animals are raised free-range and without hormones or chemicals. We are committed to ethical, sustainable practices that bring out the true flavor of every cut."
+    },
+    reviewTitle: {
+        es: <><b>The Grand</b> ha conquistado paladares exigentes y ha sido celebrado por chefs de renombre y personalidades icónicas. Aquí sus palabras, un reflejo de nuestra excelencia.</>,
+        en: <><b>The Grand</b> has conquered the most discerning palates and has been celebrated by renowned chefs and iconic personalities. Here are their words, a true reflection of our excellence.</>
     }
+
 }
 
 export default homeLang
