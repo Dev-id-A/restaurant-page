@@ -5,6 +5,7 @@ import Button from "../src/assets/Home/Button"
 import Foods from "../src/assets/Home/Foods"
 import Reviews from "../src/assets/Home/Reviews"
 import homeLang from "../src/assets/Json/HomeJson"
+import FAQBtn from "../src/assets/Home/FAQBtn"
 
 function Home({lang, toggleFade}) {
   return (
@@ -40,6 +41,10 @@ function Home({lang, toggleFade}) {
           </div>
         </section>
 
+        <section className="flex flex-col items-center text-royal text-2xl text-center gap-10">
+          <h2>Preguntas frecuentes: descubre cómo cuidamos cada detalle.</h2>
+          <FAQBtn></FAQBtn>
+        </section>
         
       </div>
     </main>
