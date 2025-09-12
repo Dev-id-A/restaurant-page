@@ -26,8 +26,8 @@ function Reviews({lang}) {
               <div className="h-full flex items-center justify-center">
                 <div className={`flex flex-col justify-center border-3 text-center rounded-xl p-10 gap-5 animation-all duration-1000 
                   ${actualIndex === index ? "h-full":"size-50"}`}>
-                  <h1 className={`${actualIndex === index ? "opacity-100":"opacity-0"}`}>{review[lang]}</h1>
-                  <h2 className={`${actualIndex === index ? "opacity-100":"opacity-0"}`}>-{review.author}</h2>
+                  <h1 className={`animation-all duration-1000 ${actualIndex === index ? "opacity-100":"text-[4px] opacity-70"}`}>{review[lang]}</h1>
+                  <h2 className={`animation-all duration-1000 ${actualIndex === index ? "opacity-100":"text-[4px] opacity-70"}`}>-{review.author}</h2>
                 </div>
               </div>
             </SwiperSlide>

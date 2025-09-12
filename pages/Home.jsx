@@ -8,7 +8,7 @@ import homeLang from "../src/assets/Json/HomeJson"
 
 function Home({lang, toggleFade}) {
   return (
-<main className="pb-20 bg-gradient-to-r from-[rgba(9,9,9,1)] via-[rgba(30,18,0,1)] to-[rgba(9,9,9,1)]">
+<main className="pb-20 bg-gradient-to-r from-[rgba(9,9,9,1)] to-[rgba(25,11,0,1)]">
   
 
       <div className="flex flex-col items-center justify-center">
