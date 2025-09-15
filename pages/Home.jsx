@@ -9,7 +9,7 @@ import FAQBtn from "../src/assets/Home/FAQBtn"
 
 function Home({lang, toggleFade}) {
   return (
-<main className="pb-20 bg-gradient-to-r from-[rgba(9,9,9,1)] to-[rgba(25,11,0,1)]">
+<main className="pb-20 bg-black">
   
 
       <div className="flex flex-col items-center justify-center">
@@ -25,7 +25,7 @@ function Home({lang, toggleFade}) {
 
             <div className="flex flex-row px-10 gap-5 justify-center w-full text-royal font-yrsa">
               <Button children={homeLang.menu[lang]} to={"menu"} src={"bg-[url('/img/home/menu.jpg')]"} />
-              <Button children={homeLang.book[lang]} to={"menu"} src={"bg-[url('/img/home/table.jpg')]"} />
+              <Button children={homeLang.book[lang]} to={"book"} src={"bg-[url('/img/home/table.jpg')]"} />
             </div>
         </section>
         

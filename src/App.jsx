@@ -4,6 +4,7 @@ import FAQ from "../pages/FAQ"
 import Menu from "../pages/Menu"
 import { useEffect, useState } from "react"
 import Layout from "../pages/Layout"
+import Book from "../pages/Book"
 
 function App() {
   const [lang, setLang] = useState("es");
@@ -27,6 +28,7 @@ function App() {
         <Route index element={<Home {...{lang, toggleFade}} />} />
         <Route path="faq" element={<FAQ/>} {...{lang, toggleFade}} />
         <Route path="menu" element={<Menu {...{lang, toggleFade}} />} />
+        <Route path="book" element={<Book {...{lang, toggleFade}} />} />
 
       </Route>
     </Routes>
