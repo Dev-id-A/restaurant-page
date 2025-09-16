@@ -26,7 +26,15 @@ const homeLang = {
     reviewTitle: {
         es: <><b>The Grand</b> ha conquistado paladares exigentes y ha sido celebrado por chefs de renombre y personalidades icónicas. Aquí sus palabras, un reflejo de nuestra excelencia.</>,
         en: <><b>The Grand</b> has conquered the most discerning palates and has been celebrated by renowned chefs and iconic personalities. Here are their words, a true reflection of our excellence.</>
-    }
+    },
+    faqTitle:{
+        es: "Preguntas frecuentes: descubre cómo cuidamos cada detalle.",
+        en: "Frequently Asked Questions: See How We Attend to Every Detail."
+    },
+    faq:{
+        es: "Preguntas",
+        en: "Questions"
+    },
 
 }
 
