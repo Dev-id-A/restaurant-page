@@ -1,9 +1,9 @@
 import FAQAccordion from "../src/assets/FAQ/FAQAccordion"
 
-function FAQ() {
+function FAQ({lang}) {
   return (
     <main>
-      <FAQAccordion />
+      <FAQAccordion {...{lang}}/>
     </main>
   )
 }
