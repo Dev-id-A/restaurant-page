@@ -35,7 +35,22 @@ const homeLang = {
         es: "Preguntas",
         en: "Questions"
     },
-    
+    contact:{
+        es: "Contacto",
+        en: "Contact"
+    },
+    ubication:{
+        es: "Ubicación",
+        en: "Ubication"
+    },
+    place:{
+        es: "España",
+        en: "Spain"
+    },
+    rights:{
+        es: "todos los derechos reservados",
+        en: "all rights reserved"
+    }
 }
 
 export default homeLang
