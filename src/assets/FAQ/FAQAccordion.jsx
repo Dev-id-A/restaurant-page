@@ -4,8 +4,8 @@ import { ChevronDown, ChevronDownIcon } from "lucide-react"
 
 function FAQAccordion({lang}) {
   return (
-    <div className="w-full p-6 flex justify-center">
-      <div className="w-full max-w-lg">
+    <div className="w-full p-6 flex justify-center text-2xl">
+      <div className="w-1/2">
         <Accordion
                   
           type="single"
@@ -15,8 +15,8 @@ function FAQAccordion({lang}) {
         >
           {faq.map((accordion, i)=> (
             <AccordionItem className="border-3" value={`item-${i}`} key={i}>
-              <AccordionTrigger className="flex flex-row justify-between items-center w-full border-b-3">{accordion.ask[lang]}<ChevronDownIcon className="flex"/></AccordionTrigger>
-              <AccordionContent className="px-2">{accordion.answer[lang]}</AccordionContent>
+              <AccordionTrigger className="flex flex-row justify-between items-center w-full">{accordion.ask[lang]}<ChevronDownIcon className="flex"/></AccordionTrigger>
+              <AccordionContent className="px-5">{accordion.answer[lang]}</AccordionContent>
             </AccordionItem>
           ))}
     </Accordion>
