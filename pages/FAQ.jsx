@@ -1,6 +1,10 @@
+import FAQAccordion from "../src/assets/FAQ/FAQAccordion"
+
 function FAQ() {
   return (
-    <div className="text-center">FAQ</div>
+    <main>
+      <FAQAccordion />
+    </main>
   )
 }
 

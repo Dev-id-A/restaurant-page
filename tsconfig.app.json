@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowJs": true,          // Permite .js y .jsx
+    "checkJs": false,         // No revisa tipos en archivos JS
+    "jsx": "react-jsx",       // Soporte JSX con React 17+
+    "baseUrl": ".",           
+    "paths": {
+      "@/*": ["./src/*"]      // Alias para importaciones limpias
+    }
+  },
+  "include": ["src"]          // Solo analiza la carpeta src
+}
