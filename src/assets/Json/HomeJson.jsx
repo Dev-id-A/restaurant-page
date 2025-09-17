@@ -35,7 +35,7 @@ const homeLang = {
         es: "Preguntas",
         en: "Questions"
     },
-
+    
 }
 
 export default homeLang

@@ -10,7 +10,7 @@ import Ubication from "../src/assets/Home/Ubication"
 
 function Home({lang, toggleFade}) {
   return (
-<main className="pb-20 bg-black text-royal">
+<main className="bg-black text-royal">
   
 
       <div className="flex flex-col items-center justify-center">
@@ -47,8 +47,15 @@ function Home({lang, toggleFade}) {
           <FAQBtn {...{lang}} />
         </section>
         
-        <section className="w-full h-fit px-5 ">
+        <section className="w-full h-fit flex flex-row mt-15 border-t-3">
           <Ubication />
+          <div className="w-1/2 flex flex-col justify-center align-center ml-auto text-3xl gap-5">
+            <h6>Contacto</h6>
+            <a className="underline ml-5" href="mailto:dev.id.a.contact@gmail.com">-dev.id.a.contact@gmail.com</a>
+            <h6>Ubicación</h6>
+            <h6 className="ml-5">-5JHQ+RRW Campamento, España.</h6>
+            <h6>© David Aranzana, todos los derechos reservados.</h6>
+          </div>
         </section>
         
       </div>
