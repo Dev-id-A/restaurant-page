@@ -10,7 +10,7 @@ import Ubication from "../src/assets/Home/Ubication"
 
 function Home({lang, toggleFade}) {
   return (
-<main className="bg-black text-royal">
+<main className="bg-gradient-to-r from-[rgba(24,14,0,1)] to-[rgba(4,4,4,1)] text-royal">
   
 
       <div className="flex flex-col items-center justify-center">
@@ -18,9 +18,7 @@ function Home({lang, toggleFade}) {
 
         <Presentation {...{lang}} />
 
-        <OurMeats {...{lang}} />
-
-        <section className="flex flex-col items-center justify-center py-30 gap-10 w-full text-center">
+        <section className="flex flex-col items-center justify-center pb-20 gap-10 w-full text-center">
           <h2 className="text-4xl font-yrsa">{homeLang.slogan[lang]}
           </h2>
 
@@ -29,8 +27,10 @@ function Home({lang, toggleFade}) {
               <Button children={homeLang.book[lang]} to={"book"} src={"bg-[url('/img/home/table.jpg')]"} />
             </div>
         </section>
+
+        <OurMeats {...{lang}} />
         
-            <Foods></Foods>
+        <Foods></Foods>
 
         <section className="flex flex-row w-full h-150 gap-30 px-5">
           <div className="flex items-center w-1/2 text-center text-3xl leading-relaxed">

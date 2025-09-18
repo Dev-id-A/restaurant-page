@@ -20,8 +20,8 @@ const homeLang = {
         en: <>Immerse yourself in the warmth of our grills and enjoy an unforgettable dinner, because The Grand is not just a restaurant: <b>The Grand is a one-of-a-kind experience.</b> Specializing in premium cuts cooked over open flames, we work with only the highest-quality meats and flawless techniques that elevate every flavor. Our guests rate us <b>5 stars</b>, recognizing the dedication and passion behind every dish. <br />Book your table and discover why every visit to The Grand becomes a memory you'll want to relive again and again!</>
     },
     message: {
-        es: "Nuestras carnes provienen de ganaderías responsables, donde los animales crecen en libertad y sin hormonas ni químicos. Apostamos por una producción ética y sostenible que realza el sabor auténtico de cada corte.",
-        en: "Our meats come from responsible farms, where animals are raised free-range and without hormones or chemicals. We are committed to ethical, sustainable practices that bring out the true flavor of every cut."
+        es: <>Nuestras carnes provienen de ganaderías responsables, donde los animales crecen en libertad y sin hormonas ni químicos. Apostamos por una producción ética y sostenible que realza el sabor auténtico <br/>de cada corte.</>,
+        en: <>Our meats come from responsible farms, where animals are raised free-range and without hormones or chemicals. We are committed to ethical, sustainable practices that bring out the true flavor of every cut.</>
     },
     reviewTitle: {
         es: <><b>The Grand</b> ha conquistado paladares exigentes y ha sido celebrado por chefs de renombre y personalidades icónicas. Aquí sus palabras, un reflejo de nuestra excelencia.</>,
