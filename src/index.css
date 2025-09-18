@@ -11,13 +11,18 @@
     src: url(/fonts/Yrsa-Regular.ttf);
 };
 @font-face{
-    font-family: Madison;
-    src: url(/fonts/Avenue\ de\ Madison.ttf);
+    font-family: Luxurious;
+    src: url(/fonts/LuxiriousRoman-Regular.ttf);
+};
+@font-face{
+    font-family: Teko;
+    src: url(/fonts/Teko-Regular.ttf);
 };
 
 @theme{
     --font-yrsa: Yrsa, "sans-serif";
-    --font-madison: Madison, "sans-serif";
+    --font-luxirious: Luxiriuous, "sans-serif";
+    --font-teko: Teko, "sans-serif";
     --color-royal: rgba(255,206,132,1);
 };
 
