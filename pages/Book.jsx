@@ -4,15 +4,13 @@ import LinkBtn from "../src/assets/FAQ/LinkBtn"
 
 function Book({lang}) {
   return (
-    <main className="relative bg-black h-screen flex flex-col justify-center items-center gap-40 text-6xl text-royal">
+    <main className="bg-black h-screen text-6xl flex flex-col items-center text-royal">
 
-      <div className="relative w-full h-30 flex flex-row justify-center items-center">
+        
+          <LinkBtn {...{lang}} />
+        
 
-        <LinkBtn {...{lang}}/>
-
-        <h1 className="absolute top-10">Book</h1>
-
-      </div>
+        <h1>Book</h1>
       
 
         <div className="flex flex-col justify-center items-center gap-3 mt-30">

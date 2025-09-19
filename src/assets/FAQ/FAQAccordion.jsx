@@ -4,7 +4,7 @@ import { ChevronDownIcon } from "lucide-react"
 
 function FAQAccordion({lang}) {
   return (
-    <div className="w-full p-6 flex justify-center">
+    <div className="w-full p-6 flex justify-center py-20">
       <div className="w-1/2">
         <Accordion   
           type="single"
