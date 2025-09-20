@@ -12,10 +12,6 @@ function Menu({lang}) {
           <h1 className="text-6xl">{menuJson.presentation[lang]}</h1>
       </div>
 
-        
-
-      
-      
       <div className="py-10 h-[90vh]">
         <MenuSection {...{lang}}/>
       </div>

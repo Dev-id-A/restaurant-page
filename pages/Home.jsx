@@ -12,7 +12,6 @@ function Home({lang, toggleFade}) {
   return (
 <main className="bg-gradient-to-r from-[rgba(24,14,0,1)] to-[rgba(4,4,4,1)] text-royal">
   
-
       <div className="flex flex-col items-center justify-center">
         <MainPage {...{toggleFade}} />
 
