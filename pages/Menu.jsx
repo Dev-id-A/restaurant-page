@@ -4,17 +4,16 @@ import LinkBtn from "../src/assets/FAQ/LinkBtn";
 
 function Menu({lang}) {
   return (
-    <main className="w-screen h-screen overflow-hidden bg-black text-royal">
+    <main className="flex flex-col bg-black text-royal min-h-screen 
+    md:overflow-hidden">
 
       <div className="flex flex-col justify-center items-center">
         <LinkBtn {...{lang}}/>
 
-          <h1 className="text-6xl">{menuJson.presentation[lang]}</h1>
+          <h1 className="mt-10 text-4xl md:mt-0 md:text-6xl">{menuJson.presentation[lang]}</h1>
       </div>
 
-      <div className="py-10 h-[90vh]">
         <MenuSection {...{lang}}/>
-      </div>
 
     </main>
 
