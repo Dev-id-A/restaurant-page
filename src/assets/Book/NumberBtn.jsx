@@ -1,6 +1,17 @@
-function NumberBtn({children, size}) {
+function NumberBtn({children, size, guest, setGuest}) {
+
+    const addRestGuest = (param) => {
+     setGuest((prev)=> {
+      if (param == "-" && prev>1){
+        return prev - 1; 
+      }else if(param == "+" && prev<20){
+        return prev + 1;
+      }
+      return prev;
+     })
+    };
   return (
-    <button className={`flex justify-center items-center border-3 border-royal ${size}`}><p>{children}</p></button>
+    <button className={`bg-black flex justify-center items-center border-3 border-royal hover:cursor-pointer ${size}`} onClick={()=>addRestGuest(`${children}`)}>{children}</button>
   )
 }
 
