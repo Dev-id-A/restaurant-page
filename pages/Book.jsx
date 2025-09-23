@@ -7,7 +7,8 @@ function Book({lang}) {
 
 
   return (
-    <main className="bg-black h-screen text-6xl flex flex-col items-center text-royal overflow-hidden">
+    <main className="bg-black min-h-screen text-6xl flex flex-col items-center text-royal pb-10
+    xl:pb-0 xl:overflow-hidden">
 
         <LinkBtn {...{lang}} />
 

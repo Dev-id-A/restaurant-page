@@ -4,7 +4,8 @@ import menuJson from "../Json/MenuJson";
 function LinkBtn({lang}) {
   return (
     <div className="flex h-fit w-4/5 mt-10">
-      <Link to={"/"} className="flex justify-center align-center border-3 border-royal w-20 text-2xl hover:scale-110 animation-all duration-500">
+      <Link to={"/"} className="flex justify-center items-center border-2 rounded-lg border-royal w-25 text-3xl font-yrsa p-2
+      hover:scale-110 animation-all duration-500">
             {menuJson.home[lang]}
       </Link>
     </div>
