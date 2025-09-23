@@ -10,7 +10,7 @@ function FAQ({lang}) {
 
           <LinkBtn {...{lang}}/>
 
-          <h1 className="text-6xl font-sancreek uppercase">{faqPage.title[lang]}</h1>
+          <h1 className="mt-10 xl:mt-0 text-2xl md:text-3xl lg:text-6xl font-sancreek uppercase">{faqPage.title[lang]}</h1>
           
       </div>
         

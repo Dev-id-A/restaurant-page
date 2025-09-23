@@ -31,6 +31,11 @@
     --color-royal: rgba(255,206,132,1);
 };
 
+.acorddion-wrapper{
+    scroll-behavior: smooth;
+    scroll-margin-block-end: 2rem;
+}
+
 ;
 
 @theme inline {
