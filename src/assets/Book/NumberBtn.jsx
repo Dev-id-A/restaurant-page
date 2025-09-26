@@ -1,17 +1,31 @@
-function NumberBtn({children, size, guest, setGuest}) {
+function NumberBtn({parameter, children, size, guest, setGuest, time, setTime}) {
 
-    const addRestGuest = (param) => {
+    const addRestParameters = (children, parameter) => {
+      //Guest section
+      if (parameter == guest){
      setGuest((prev)=> {
-      if (param == "-" && prev>1){
+      if (children == "-" && prev > 1){
         return prev - 1; 
-      }else if(param == "+" && prev<20){
+      }else if(children == "+" && prev < 20){
         return prev + 1;
       }
       return prev;
      })
-    };
+    }
+    //Time section
+    else if(parameter == time){
+      setTime((prev)=>{
+        if(children == "-" && prev > 14){
+          return prev - 1;
+        } else if(children == "+" && prev < 22){
+          return prev + 1;
+        }
+        return prev;
+      })
+    }
+  };
   return (
-    <button className={`bg-black flex justify-center items-center border-3 border-royal hover:cursor-pointer ${size}`} onClick={()=>addRestGuest(`${children}`)}>{children}</button>
+    <button className={`bg-black flex justify-center items-center border-3 border-royal hover:cursor-pointer ${size}`} onClick={()=>addRestParameters(children, parameter)}>{children}</button>
   )
 }
 

@@ -2,9 +2,11 @@ import BookSection from "../src/assets/Book/BookSection"
 import NumberBtn from "../src/assets/Book/NumberBtn"
 import LinkBtn from "../src/assets/FAQ/LinkBtn"
 import book from "../src/assets/Json/BookJson"
+import { useState } from "react"
 
 function Book({lang}) {
-
+    let [guest, setGuest] = useState(1);
+    let [time, setTime] = useState(14);
 
   return (
     <main className="bg-black min-h-screen text-6xl flex flex-col items-center text-royal pb-10
@@ -18,7 +20,7 @@ function Book({lang}) {
 
         <div className="flex flex-col justify-center items-center gap-3">
           <h2 className="text-5xl text-center">{book.guest[lang]}</h2>
-          <BookSection></BookSection>
+          <BookSection parameter={guest} {...{guest, setGuest, time, setTime}}></BookSection>
         </div>
 
         <div className="flex flex-col justify-center items-center gap-3">
@@ -28,7 +30,7 @@ function Book({lang}) {
         
         <div className="flex flex-col justify-center items-center gap-3">
           <h2 className="text-5xl text-center">{book.time[lang]}</h2>
-          <BookSection></BookSection>
+          <BookSection parameter={time} {...{guest, setGuest, time, setTime}}></BookSection>
         </div>
         
 
