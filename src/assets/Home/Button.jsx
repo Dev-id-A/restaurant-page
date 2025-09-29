@@ -3,15 +3,15 @@ import { Link } from "react-router"
 function Button({children, to, src}) {
   return (
 
-      <Link to={to} className="relative flex items-center justify-center border border-royal 
-      cursor-pointer h-160 w-full group pb-5 overflow-hidden hover:scale-101">
+      <Link to={to} className="relative flex items-center justify-center border border-royal
+      cursor-pointer h-80 xl:h-160 w-full group pb-5 overflow-hidden hover:scale-101">
             
       <div className={`absolute inset-0 ${src} bg-cover bg-center 
       transition-all duration-1000 ease-in-out group-hover:scale-110`}></div>
 
       <div className="absolute inset-0 bg-black/70 hover:bg-black/50"></div>
 
-            <h3 className="text-6xl group-hover:scale-110 transition-all duration-500 z-5">
+            <h3 className="text-3xl xl:text-6xl group-hover:scale-110 transition-all duration-500 z-5">
                 {children}
             </h3>
 
