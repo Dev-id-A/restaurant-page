@@ -17,18 +17,18 @@ function Book({lang}) {
     let [time, setTime] = useState(14);
 
   return (
-    <main className="bg-black min-h-screen text-6xl flex flex-col items-center text-royal pb-10
+    <main className="bg-black min-h-screen text-6xl flex flex-col items-center text-royal font-yrsa pb-10
     xl:pb-0 xl:overflow-hidden">
 
         <LinkBtn {...{lang}} />
 
-        <h1>{book.bookTitle[lang]}</h1>
+        <h1 className="uppercase">{book.bookTitle[lang]}</h1>
 
-      <div className="flex flex-col gap-15 mt-10 py-10 px-20 border-3 border-royal bg-[rgb(56,56,56)]">
+      <div className="flex flex-col gap-15 mt-10 py-10 px-20 border-16 border-royal bg-[rgba(45,1,1,1)]">
 
         <div className="flex flex-col justify-center items-center gap-3">
           <h2 className="text-5xl text-center">{book.guest[lang]}</h2>
-          <BookSection parameter={guest} {...{guest, setGuest, time, setTime}}></BookSection>
+          <BookSection parameter={guest} {...{guest, setGuest}}></BookSection>
         </div>
 
         <div className="flex flex-col justify-center items-center gap-3">
@@ -38,10 +38,11 @@ function Book({lang}) {
         
         <div className="flex flex-col justify-center items-center gap-3">
           <h2 className="text-5xl text-center">{book.time[lang]}</h2>
-          <BookSection parameter={time} {...{guest, setGuest, time, setTime}}></BookSection>
+          <BookSection parameter={time} {...{time, setTime}}></BookSection>
         </div>
         
-        <button className="bg-black flex justify-center items-center border-3 border-royal hover:cursor-pointer px-10 py-5">
+        <button className="bg-black flex justify-center items-center border-1 border-royal hover:cursor-pointer px-10 py-5
+        hover:scale-110 animation-all duration-500">
           <a href="mailto:dev.id.a.contact@gmail.com" target="_blank">{book.bookBnt[lang]}</a></button>
 
       </div>

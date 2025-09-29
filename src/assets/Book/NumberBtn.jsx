@@ -25,7 +25,8 @@ function NumberBtn({parameter, children, size, guest, setGuest, time, setTime}) 
     }
   };
   return (
-    <button className={`bg-black flex justify-center items-center border-3 border-royal hover:cursor-pointer ${size}`} onClick={()=>addRestParameters(children, parameter)}>{children}</button>
+    <button className={`bg-black flex justify-center items-center border-1 border-royal hover:cursor-pointer hover:text-[rgba(80,80,80,1)] ${size}`} 
+    onClick={()=>addRestParameters(children, parameter)}>{children}</button>
   )
 }
 
