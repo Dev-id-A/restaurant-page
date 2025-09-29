@@ -31,24 +31,24 @@ function Home({lang, toggleFade}) {
         
         <Foods></Foods>
 
-        <section className="flex flex-col xl:flex-row w-full h-150 gap-30 px-5 font-teko">
-          <div className="flex items-center w-1/2 text-center text-4xl leading-relaxed">
+        <section className="flex flex-col xl:flex-row w-full xl:h-150 gap-5 py-25 xl:gap-30 px-5 font-teko">
+          <div className="flex items-center w-full xl:w-1/2 text-center text-2xl xl:text-4xl leading-relaxed">
             <h2>{homeLang.reviewTitle[lang]}</h2>
           </div>
           
-          <div className="flex items-center w-1/2">
+          <div className="flex items-center w-full xl:w-1/2">
             <Reviews {...{lang}}/>
           </div>
         </section>
 
-        <section className="flex flex-col items-center text-3xl text-center gap-10 font-luxurious">
-          <h2>{homeLang.faqTitle[lang]}</h2>
+        <section className="flex flex-col items-center text-lg xl:text-3xl text-center px-5 xl:px-0 gap-10 font-luxurious">
+          <h2 className="text-xl xl:text-3xl">{homeLang.faqTitle[lang]}</h2>
           <FAQBtn {...{lang}} />
         </section>
         
         <section className="w-full h-fit flex flex-col xl:flex-row mt-15 border-t-3 border-royal bg-gradient-to-t from-[rgba(76,61,40,1)] to-[rgba(4,4,4,1)]">
           <Ubication />
-          <div className="w-full xl:w-1/2 flex flex-col justify-center align-center ml-auto text-2xl gap-5">
+          <div className="w-full xl:w-1/2 flex flex-col justify-center align-center ml-auto text-md xl:text-2xl gap-5 p-3 xl:p-0">
             <h6>{homeLang.contact[lang]}</h6>
             <a className="underline ml-5 italic" href="mailto:dev.id.a.contact@gmail.com">-dev.id.a.contact@gmail.com</a>
             <h6>{homeLang.ubication[lang]}</h6>
