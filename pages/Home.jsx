@@ -21,7 +21,7 @@ function Home({lang, toggleFade}) {
           <h2 className="text-3xl xl:text-4xl font-yrsa">{homeLang.slogan[lang]}
           </h2>
 
-            <div className="flex flex-col xl:flex-row px-3 xl:px-10 gap-5 justify-center w-full font-luxurious">
+            <div className="flex flex-col md:flex-row px-3 xl:px-10 gap-5 justify-center w-full font-luxurious">
               <Button children={homeLang.menu[lang]} to={"menu"} src={"bg-[url('/img/home/menu.jpg')]"} />
               <Button children={homeLang.book[lang]} to={"book"} src={"bg-[url('/img/home/table.jpg')]"} />
             </div>
@@ -46,9 +46,9 @@ function Home({lang, toggleFade}) {
           <FAQBtn {...{lang}} />
         </section>
         
-        <section className="w-full h-fit flex flex-col xl:flex-row mt-15 border-t-3 border-royal bg-gradient-to-t from-[rgba(76,61,40,1)] to-[rgba(4,4,4,1)]">
+        <section className="w-full h-fit flex flex-col lg:flex-row mt-15 border-t-3 border-royal bg-gradient-to-t from-[rgba(76,61,40,1)] to-[rgba(4,4,4,1)]">
           <Ubication />
-          <div className="w-full xl:w-1/2 flex flex-col justify-center align-center ml-auto text-md xl:text-2xl gap-5 p-3 xl:p-0">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center align-center ml-auto md:text-center lg:text-left text-md xl:text-2xl gap-5 p-3 xl:p-0 ">
             <h6>{homeLang.contact[lang]}</h6>
             <a className="underline ml-5 italic" href="mailto:dev.id.a.contact@gmail.com">-dev.id.a.contact@gmail.com</a>
             <h6>{homeLang.ubication[lang]}</h6>

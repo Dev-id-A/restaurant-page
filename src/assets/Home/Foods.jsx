@@ -49,6 +49,7 @@ const carouselImg = [
         modules={[Autoplay]}
         breakpoints={{
           0: {slidesPerView: 1, slidesPerGroup: 1},
+          640: {slidesPerView: 2, slidesPerGroup: 2},
           1024: {slidesPerView: 4, slidesPerGroup: 1}
         }}
         loop
@@ -62,7 +63,7 @@ const carouselImg = [
               <img 
               src={slide.src}
               alt={slide.alt}
-              className="w-full h-80 xl:h-100 object-cover border-y-3 border-royal"/>
+              className="w-full h-80 xl:h-100 object-cover border-y-5 border-royal"/>
             </SwiperSlide>
           ))}
         </Swiper>

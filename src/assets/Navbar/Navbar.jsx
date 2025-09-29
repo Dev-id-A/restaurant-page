@@ -2,7 +2,7 @@ import LangIcon from "./LangIcon"
 
 function Navbar({toggleFade}) {
   return (
-    <div className="absolute xl:left-5 top-2 h-25 flex items-center px-3 xl:px-10 gap-2">
+    <div className="absolute md:left-5 top-2 lg:top-0 h-25 flex items-center px-3 xl:px-10 gap-2">
       <LangIcon src={"/svg/spain.svg"} alt={"Spanish"} onClick={()=> toggleFade("es")} />
       <LangIcon src={"/svg/uk.svg"} alt={"English"} onClick={()=> toggleFade("en")}/>
     </div>
