@@ -31,8 +31,8 @@ function Home({lang, toggleFade}) {
         
         <Foods></Foods>
 
-        <section className="flex flex-row w-full h-150 gap-30 px-5">
-          <div className="flex items-center w-1/2 text-center text-3xl leading-relaxed">
+        <section className="flex flex-row w-full h-150 gap-30 px-5 font-teko">
+          <div className="flex items-center w-1/2 text-center text-4xl leading-relaxed">
             <h2>{homeLang.reviewTitle[lang]}</h2>
           </div>
           
@@ -41,18 +41,18 @@ function Home({lang, toggleFade}) {
           </div>
         </section>
 
-        <section className="flex flex-col items-center text-2xl text-center gap-10">
+        <section className="flex flex-col items-center text-3xl text-center gap-10 font-luxurious">
           <h2>{homeLang.faqTitle[lang]}</h2>
           <FAQBtn {...{lang}} />
         </section>
         
-        <section className="w-full h-fit flex flex-row mt-15 border-t-3 border-royal">
+        <section className="w-full h-fit flex flex-row mt-15 border-t-3 border-royal bg-gradient-to-t from-[rgba(76,61,40,1)] to-[rgba(4,4,4,1)]">
           <Ubication />
-          <div className="w-1/2 flex flex-col justify-center align-center ml-auto text-3xl gap-5">
+          <div className="w-1/2 flex flex-col justify-center align-center ml-auto text-2xl gap-5">
             <h6>{homeLang.contact[lang]}</h6>
-            <a className="underline ml-5" href="mailto:dev.id.a.contact@gmail.com">-dev.id.a.contact@gmail.com</a>
+            <a className="underline ml-5 italic" href="mailto:dev.id.a.contact@gmail.com">-dev.id.a.contact@gmail.com</a>
             <h6>{homeLang.ubication[lang]}</h6>
-            <h6 className="ml-5">-5JHQ+RRW Campamento, {homeLang.place[lang]}.</h6>
+            <h6 className="ml-5 italic">-5JHQ+RRW Campamento, {homeLang.place[lang]}.</h6>
             <h6>© David Aranzana, {homeLang.rights[lang]}.</h6>
           </div>
         </section>

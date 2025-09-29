@@ -52,7 +52,7 @@ const carouselImg = [
         loop
         speed={1500}
         spaceBetween={20}
-        autoplay={{delay: 5000, disableOnInteraction: false}}
+        autoplay={{delay: 7000, disableOnInteraction: false}}
         >
 
           {carouselImg.map((slide, index) =>(
@@ -60,7 +60,7 @@ const carouselImg = [
               <img 
               src={slide.src}
               alt={slide.alt}
-              className="w-full h-100 object-cover"/>
+              className="w-full h-100 object-cover border-y-3 border-royal"/>
             </SwiperSlide>
           ))}
         </Swiper>
