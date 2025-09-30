@@ -1,9 +1,9 @@
 import { Link } from "react-router"
 
-function Button({children, to, src}) {
+function Button({children, to, src, click}) {
   return (
 
-      <Link to={to} className="relative flex items-center justify-center border border-royal
+      <Link to={to} onClick={click} className="relative flex items-center justify-center border border-royal
       cursor-pointer h-80 xl:h-160 w-full group pb-5 overflow-hidden hover:scale-101">
             
       <div className={`absolute inset-0 ${src} bg-cover bg-center 

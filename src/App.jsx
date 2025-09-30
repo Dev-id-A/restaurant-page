@@ -28,7 +28,6 @@ function App() {
         <Route index element={<Home {...{lang, toggleFade}} />} />
         <Route path="faq" element={<FAQ {...{lang, toggleFade}}/>} />
         <Route path="menu" element={<Menu {...{lang, toggleFade}} />} />
-        <Route path="book" element={<Book {...{lang, toggleFade}} />} />
 
       </Route>
     </Routes>

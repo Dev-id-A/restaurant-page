@@ -7,11 +7,29 @@ import Reviews from "../src/assets/Home/Reviews"
 import homeLang from "../src/assets/Json/HomeJson"
 import FAQBtn from "../src/assets/Home/FAQBtn"
 import Ubication from "../src/assets/Home/Ubication"
+import Book from "./Book"
+import { useState } from "react"
 
 function Home({lang, toggleFade}) {
+  const [bookDisplay, setBookDisplay] = useState("hidden");
+
+  const changeDisplay = () => {
+    if(bookDisplay == "hidden"){
+      return setBookDisplay("block");
+    } else if (bookDisplay == "block"){
+      return setBookDisplay("hidden");
+    }
+    return;
+  }
+
   return (
 <main className="bg-gradient-to-r from-[rgba(24,14,0,1)] to-[rgba(4,4,4,1)] text-royal">
-  
+
+    <div className={`bg-[rgba(0,0,0,0.7)] min-h-screen min-w-screen z-10 fixed ${bookDisplay}`}>
+      <Book lang={lang} {...{bookDisplay, setBookDisplay, changeDisplay}}></Book>
+    </div>
+      
+
       <div className="flex flex-col items-center justify-center">
         <MainPage {...{toggleFade}} />
 
@@ -23,7 +41,7 @@ function Home({lang, toggleFade}) {
 
             <div className="flex flex-col md:flex-row px-3 xl:px-10 gap-5 justify-center w-full font-luxurious">
               <Button children={homeLang.menu[lang]} to={"menu"} src={"bg-[url('/img/home/menu.jpg')]"} />
-              <Button children={homeLang.book[lang]} to={"book"} src={"bg-[url('/img/home/table.jpg')]"} />
+              <Button children={homeLang.book[lang]} click={changeDisplay} src={"bg-[url('/img/home/table.jpg')]"} />
             </div>
         </section>
 
