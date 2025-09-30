@@ -4,7 +4,7 @@ import book from "../src/assets/Json/BookJson"
 import Xbtn from "@/assets/Book/Xbtn"
 import { useState } from "react"
 
-function Book({lang, display, changeDisplay}) {
+function Book({lang, display, setDisplay}) {
     const today = new Date();
     const maxDate = new Date();
     maxDate.setDate(today.getDate() + 30);
@@ -17,8 +17,7 @@ function Book({lang, display, changeDisplay}) {
     let [time, setTime] = useState(14);
 
   return (
-    <main className="text-6xl flex flex-col items-center justify-center pt-10 text-royal font-yrsa pb-10 xl:pb-0 xl:overflow-hidden
-    tarnsition-opacity duration-1000">
+    <main className="text-6xl flex flex-col items-center justify-center pt-10 text-royal font-yrsa pb-10">
 
       
         <h1 className="uppercase">{book.bookTitle[lang]}</h1>
@@ -26,7 +25,7 @@ function Book({lang, display, changeDisplay}) {
       <div className="flex flex-col gap-15 mt-10 py-10 px-20 border-10 border-royal bg-[rgba(45,1,1,1)]">
         
         <div className="flex flex-col justify-center items-center gap-3">
-          <Xbtn {...{changeDisplay}}/>
+          <Xbtn {...{setDisplay}}/>
           <h2 className="text-5xl text-center">{book.guest[lang]}</h2>
           <BookSection parameter={guest} {...{guest, setGuest}}></BookSection>
         </div>
