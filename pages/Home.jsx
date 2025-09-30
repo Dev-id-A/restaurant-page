@@ -23,8 +23,8 @@ function Home({lang, toggleFade}) {
   return (
 <main className="bg-gradient-to-r from-[rgba(24,14,0,1)] to-[rgba(4,4,4,1)] text-royal">
 
-    <div className={`bg-[rgba(0,0,0,0.7)] min-h-screen min-w-screen z-10 fixed ${display == true ? "visible opacity-100":"invisible opacity-0"}
-    transition-all duration-1000`}>
+    <div className={`bg-[rgba(0,0,0,0.7)] h-full w-full xl:min-h-screen xl:min-w-screen z-10 fixed ${display == true ? "visible opacity-100":"invisible opacity-0"}
+    transition-opacity duration-1000`}>
       <Book lang={lang} {...{setDisplay}}></Book>
     </div>
       
