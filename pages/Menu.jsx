@@ -4,7 +4,7 @@ import LinkBtn from "../src/assets/FAQ/LinkBtn";
 import { useEffect } from "react";
 
 function Menu({lang}) {
-  useEffect(()=> window.scrollTo(0,0));
+  useEffect(()=> window.scrollTo(0,0),[]);
   return (
     <main className="flex flex-col bg-black text-royal min-h-screen font-luxurious">
 
