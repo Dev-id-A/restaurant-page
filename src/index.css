@@ -8,19 +8,19 @@
 
 @font-face{
     font-family: Yrsa;
-    src: url(/fonts/Yrsa-Regular.ttf);
+    src: url(/fonts/Yrsa-Regular.ttf) format("typetrue");
 }
 @font-face{
     font-family: Luxirious;
-    src: url(/fonts/LuxiriousRoman-Regular.ttf);
+    src: url(/fonts/LuxiriousRoman-Regular.ttf) format("typetrue");
 }
 @font-face{
     font-family: Teko;
-    src: url(/fonts/Teko-Regular.ttf);
+    src: url(/fonts/Teko-Regular.ttf) format("typetrue");
 }
 @font-face{
     font-family: Sancreek;
-    src: url(/fonts/Sancreek-Regular.ttf);
+    src: url(/fonts/Sancreek-Regular.ttf) format("typetrue");
 }
 
 @theme{
