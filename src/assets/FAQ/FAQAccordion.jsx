@@ -18,7 +18,7 @@ function FAQAccordion({lang}) {
               <AccordionTrigger className="text-xl lg:text-2xl font-sancreek">
                 {accordion.ask[lang]}
               </AccordionTrigger>
-              <AccordionContent className="px-5 text-lg lg:text-xl font-luxurious text-white">{accordion.answer[lang]}</AccordionContent>
+              <AccordionContent className="px-5 text-lg lg:text-xl font-luxirious text-white">{accordion.answer[lang]}</AccordionContent>
             </AccordionItem>
           ))}
     </Accordion>

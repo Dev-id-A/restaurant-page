@@ -63,7 +63,7 @@ const carouselImg = [
               <img 
               src={slide.src}
               alt={slide.alt}
-              className="w-full h-80 xl:h-100 object-cover border-y-5 border-royal"/>
+              className="w-full h-80 xl:h-100 object-cover border-y-3 border-royal"/>
             </SwiperSlide>
           ))}
         </Swiper>
