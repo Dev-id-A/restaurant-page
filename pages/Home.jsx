@@ -38,7 +38,7 @@ function Home({lang, toggleFade}) {
           <h2 className="text-3xl xl:text-4xl font-yrsa">{homeLang.slogan[lang]}
           </h2>
 
-            <div className="flex flex-col md:flex-row px-3 xl:px-10 gap-5 justify-center w-full font-luxirious">
+            <div className="flex flex-col md:flex-row px-3 xl:px-10 gap-5 justify-center w-full font-luxurious">
               <Button children={homeLang.menu[lang]} to={"menu"} src={"bg-[url('/img/home/menu.jpg')]"} />
               <Button children={homeLang.book[lang]} click={()=>setDisplay(prev=> !prev)} src={"bg-[url('/img/home/table.jpg')]"} />
             </div>
@@ -58,7 +58,7 @@ function Home({lang, toggleFade}) {
           </div>
         </section>
 
-        <section className="flex flex-col items-center text-lg xl:text-3xl text-center px-5 xl:px-0 gap-10 font-luxirious">
+        <section className="flex flex-col items-center text-lg xl:text-3xl text-center px-5 xl:px-0 gap-10 font-luxurious">
           <h2 className="text-xl xl:text-3xl">{homeLang.faqTitle[lang]}</h2>
           <FAQBtn {...{lang}} />
         </section>

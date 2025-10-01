@@ -11,8 +11,8 @@
     src: url(/fonts/Yrsa-Regular.woff) format("woff");
 }
 @font-face{
-    font-family: Luxirious;
-    src: url(/fonts/LuxiriousRoman-Regular.woff) format("woff");
+    font-family: Luxurious;
+    src: url(/fonts/LuxuriousRoman-Regular.woff) format("woff");
 }
 @font-face{
     font-family: Teko;
@@ -25,7 +25,7 @@
 
 @theme{
     --font-yrsa: Yrsa, "sans-serif";
-    --font-luxirious: Luxirious, "sans-serif";
+    --font-luxurious: Luxurious, "sans-serif";
     --font-teko: Teko, "sans-serif";
     --font-sancreek: Sancreek, "sans-serif";
     --color-royal: rgba(255,206,132,1);
