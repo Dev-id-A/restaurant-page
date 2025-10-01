@@ -6,7 +6,7 @@ const menuJson = {
         image: "/img/menu/images/wine.jpg",
         menu: {
             es: "/img/menu/menus/carta-vinos.pdf",
-            en: "",
+            en: "/img/menu/menus/our-wines.pdf",
         }
     },
     {
@@ -15,7 +15,7 @@ const menuJson = {
         image: "/img/menu/images/meat.jpg",
         menu: {
             es: "/img/menu/menus/carta-carnes.pdf",
-            en: "",
+            en: "/img/menu/menus/our-meats.pdf",
         }
     },
     {
@@ -24,7 +24,7 @@ const menuJson = {
         image: "/img/menu/images/cake.jpg",
         menu: {
             es: "/img/menu/menus/carta-postres.pdf",
-            en: "",
+            en: "/img/menu/menus/our-desserts.pdf",
         }
     }],
     home:{
