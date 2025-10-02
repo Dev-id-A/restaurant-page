@@ -34,7 +34,7 @@ function Home({lang, toggleFade}) {
 
         <Presentation {...{lang}} />
 
-        <section className="flex flex-col items-center justify-center pb-20 px-3 xl:px-0 gap-10 w-full text-center">
+        <section className="flex flex-col items-center justify-center py-20 px-3 xl:px-0 gap-10 w-full text-center">
           <h2 className="text-3xl xl:text-4xl font-yrsa">{homeLang.slogan[lang]}
           </h2>
 
