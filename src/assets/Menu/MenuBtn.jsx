@@ -1,7 +1,7 @@
 function MenuBtn({children, image, menu}) {
   return (
     <button className="relative border hover:cursor-pointer group border-royal w-60 h-80
-    md:w-full md:h-80 lg:h-100 xl:h-160" onClick={()=> window.open(`${menu}`, "_blank")}>
+    md:w-full md:h-80 lg:h-100 xl:h-140" onClick={()=> window.open(`${menu}`, "_blank")}>
       
       <img src={`${image}`} className="absolute inset-0 size-full group-hover:scale-102 transition-all duration-1000" />
       

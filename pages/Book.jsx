@@ -17,12 +17,12 @@ function Book({lang, display, setDisplay}) {
     let [time, setTime] = useState(14);
 
   return (
-    <main className="text-2xl xl:text-6xl flex flex-col items-center justify-center pt-10 text-royal font-yrsa pb-10">
+    <main className="text-2xl xl:text-5xl flex flex-col items-center justify-center py-10 text-royal font-yrsa">
 
       
         <h1 className="uppercase">{book.bookTitle[lang]}</h1>
         
-      <div className="flex flex-col gap-5 xl:gap-15 mt-5 xl:mt-10 p-5 xl:py-10 md:px-20 border-10 border-royal bg-[rgba(45,1,1,1)] text-2xl xl:text-5xl text-center">
+      <div className="flex flex-col gap-5 mt-5 p-5 xl:py-10 md:px-20 border-10 border-royal bg-[rgba(45,1,1,1)] text-2xl xl:text-5xl text-center">
         
         <div className="flex flex-col justify-center items-center">
           <Xbtn {...{setDisplay}}/>
